@@ -1,0 +1,123 @@
+ Each file within ./dataStructures/ contains a class or set of classes that work together to compute and optimize group assignments.
+
+1. attribute.py
+
+Defines the Attribute and Attributes classes to represent characteristics or preferences used for compatibility calculations.
+
+	•	Classes:
+	•	Attribute:
+	•	Attributes:
+	•	name: The name of the attribute (e.g., “Preferred Language”).
+	•	description: A description of the attribute.
+	•	selections: List of possible options for this attribute.
+	•	cs_matrix: A 2D list storing compatibility scores between selections.
+	•	weight: The importance of this attribute in overall compatibility.
+	•	s_indices: A dictionary mapping selections to their indices for quick lookups.
+	•	Methods:
+	•	__str__(): Returns the attribute’s name.
+	•	get_selections(): Returns the list of possible selections.
+	•	get_weight(): Returns the attribute’s weight.
+	•	get_cs_matrix(): Returns the compatibility matrix.
+	•	get_selections_score(s1, s2): Returns the compatibility score for two selections.
+	•	Attributes:
+	•	Attributes:
+	•	active: A list of active attributes.
+	•	options: A list of all possible attribute options.
+	•	inactive: A list of inactive attributes.
+	•	Methods:
+	•	get_active(): Returns the list of active attributes.
+	•	get_inactive(): Returns the list of inactive attributes.
+	•	get_options(): Returns the list of all options.
+
+2. person.py
+
+Defines the Person class to represent an individual with preferences and flexibility scores.
+
+	•	Class:
+	•	Person:
+	•	Attributes:
+	•	name: The name of the person.
+	•	sid: A unique identifier for the person.
+	•	selections: A dictionary mapping each Attribute to the person’s selection.
+	•	flexibility_scores: A dictionary mapping each Attribute to the person’s flexibility score (1-10 scale).
+	•	group: The group to which the person is assigned (initialized to None).
+	•	Methods:
+	•	__str__(): Returns the person’s name.
+	•	get_flexibility(attribute): Retrieves the flexibility score for a given attribute.
+	•	get_selection(attribute): Retrieves the selection for a given attribute.
+	•	update_selection(attribute, selection): Updates the person’s selection for an attribute.
+	•	update_flexibility(attribute, score): Updates the flexibility score for an attribute.
+
+3. pair.py
+
+Defines the Pair class, which represents a pair of two Person objects and calculates their compatibility.
+
+	•	Class:
+	•	Pair:
+	•	Attributes:
+	•	p1, p2: The two people forming the pair.
+	•	attributes: An Attributes object containing the active attributes.
+	•	_selection_scores_raw: A dictionary storing raw compatibility scores for each attribute.
+	•	_selection_scores: A dictionary storing adjusted compatibility scores based on flexibility.
+	•	Methods:
+	•	_initialize_scores(): Initializes the raw and adjusted compatibility scores for each attribute.
+	•	_get_attribute_pcs_raw(attribute): Computes the raw compatibility score for a given attribute.
+	•	_get_attribute_pcs(attribute, raw_score): Adjusts the raw compatibility score using flexibility.
+	•	PCS_raw(): Returns the weighted raw compatibility score across all active attributes.
+	•	PCS(): Returns the weighted adjusted compatibility score across all active attributes.
+	•	selection_scores_raw(): Returns a copy of the raw selection scores.
+	•	selection_scores(): Returns a copy of the adjusted selection scores.
+
+4. group.py
+
+Defines the Group class, which represents a group of Person objects and calculates the group’s overall compatibility.
+
+	•	Class:
+	•	Group:
+	•	Attributes:
+	•	members: List of Person instances in the group.
+	•	min_size, max_size: Minimum and maximum size constraints for the group.
+	•	_pcs_dict: Dictionary to store pairwise compatibility scores.
+	•	_GCS: The overall group compatibility score.
+	•	_PCS_variance: The variance of pairwise compatibility scores within the group.
+	•	cohort: The cohort to which the group belongs.
+	•	Methods:
+	•	add_member(person): Adds a new member to the group and updates the group’s scores.
+	•	add_pair(pair): Adds a pair to the group, ensuring they are not already in another group.
+	•	remove_member(person): Removes a member from the group and updates scores.
+	•	compute_GCS(): Computes the group’s overall compatibility score.
+	•	compute_PCS_variance(): Calculates the variance of pairwise compatibility scores within the group.
+	•	get_most_compatible_pair(): Returns the pair with the highest compatibility score in the group.
+	•	get_least_compatible_pair(): Returns the pair with the lowest compatibility score in the group.
+	•	size(): Returns the current size of the group.
+	•	all_members(): Returns a copy of the members in the group.
+
+5. cohort.py
+
+Defines the Cohort class, which manages a collection of people, their pairs, and the groups formed within the cohort.
+
+	•	Class:
+	•	Cohort:
+	•	Attributes:
+	•	_people: List of all Person objects in the cohort.
+	•	_attributes: An Attributes object containing the cohort’s active attributes.
+	•	_pairs: Dictionary containing Pair objects for all unique combinations of people.
+	•	nMax, nMin: Maximum and minimum allowed group sizes.
+	•	_groups: List of Group objects.
+	•	_nGroups: The total number of groups in the cohort.
+	•	_GCS_mean: Mean group compatibility score.
+	•	_GCS_variance: Variance of group compatibility scores.
+	•	Methods:
+	•	_load_pairs(people): Initializes a dictionary of all possible Pair objects in the cohort.
+	•	find_pair(p1, p2): Retrieves an existing pair or creates a new one if it doesn’t exist.
+	•	allocate_groups_greedy(): Allocates groups using a greedy approach to maximize initial compatibility.
+	•	allocate_groups_SA(): Optimizes group allocation using Simulated Annealing to minimize variance.
+	•	compute_GCS_variance(): Calculates the variance of the Group Compatibility Scores (GCS) across all groups in the cohort.
+	•	people(): Returns a copy of the list of people in the cohort.
+	•	pairs(): Returns a copy of the dictionary of pairs in the cohort.
+	•	groups(): Returns a copy of the list of groups in the cohort.
+	•	GCS_mean(): Returns the mean group compatibility score.
+	•	GCS_variance(): Returns the variance of group compatibility scores.
+	•	nGroups(): Returns the number of groups in the cohort.
+
+This summary provides an overview of each file, its classes, attributes, and key methods, enabling future reference and further development of the algorithm.
