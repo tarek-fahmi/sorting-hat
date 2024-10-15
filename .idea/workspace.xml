@@ -5,34 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20c030e4-bb40-4992-8b38-ed1245dc3187" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/dummy_data_v1.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/dummy_data_v2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backend/utils/read_cfg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backend/utils/read_csv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Sorting Hat - Enhancing Group Synergy.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/dummy_data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/responses.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/data_structures.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/data_structures.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v1/sorting-hat-v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/sorting-hat-v1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v2/algorithms/advanced_allocation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/algorithms/advanced_allocation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v2/algorithms/heuristic_allocation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/algorithms/heuristic_allocation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v2/cfg_loader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v2/data_structures/attribute.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/data_structures/attribute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v2/data_structures/cohort.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/data_structures/cohort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v2/data_structures/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/data_structures/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v2/data_structures/pair.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/data_structures/pair.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v2/data_structures/person.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/data_structures/person.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v2/resources/cfg_custom.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v2/resources/cfg_default.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v2/setup/read_csv.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/v2/utils/utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/utils/utilities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.github/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sorting-hat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sorting-hat.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/dummy_data_v1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/input/v1_dummy_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/dummy_data_v2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/input/v2_dummy_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/v1-documentation-report.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/configuration/setup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backend/data_structures/attribute.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/data_structures/attribute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backend/utils/read_cfg.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/utils/read_cfg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backend/utils/read_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/utils/read_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/frontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/frontend/eslint.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/eslint.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/frontend/public/vite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/public/vite.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/frontend/src/assets/react.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/assets/react.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/frontend/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/frontend/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/pages/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/frontend/src/pages/Upload.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/pages/Upload.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/frontend/src/vite-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/vite-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/frontend/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/frontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/frontend/tsconfig.node.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/tsconfig.node.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/frontend/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,19 +54,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/resources" />
+      <recent name="$PROJECT_DIR$/resources/input" />
+      <recent name="$PROJECT_DIR$/resources/configuration" />
       <recent name="$PROJECT_DIR$/src/backend" />
-      <recent name="$PROJECT_DIR$/src/v2/backend" />
-      <recent name="$PROJECT_DIR$/src/v2" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager">
@@ -80,7 +84,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/backend/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />

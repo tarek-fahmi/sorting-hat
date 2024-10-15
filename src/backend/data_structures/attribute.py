@@ -3,7 +3,7 @@ from typing import List, Dict
 
 class Attributes:
     def __init__(self, active: List[str], options: List[str]):
-        # A list of all optional attributes from the config.json.
+        # A list of all optional attributes from the setup.json.
         self.options = options
 
         # A list of all active attributes that are valid options.

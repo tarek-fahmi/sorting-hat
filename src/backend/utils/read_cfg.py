@@ -1,6 +1,6 @@
 import json
 from typing import List, Dict
-from ..data_structures.attribute import Attributes, Attribute
+from src.backend.data_structures.attribute import Attributes, Attribute
 
 
 def load_attributes(file_path: str) -> Attributes:
@@ -21,7 +21,7 @@ def load_attributes(file_path: str) -> Attributes:
     active_attributes = []
     all_options = []
 
-    # Loop through each attribute in the config.json
+    # Loop through each attribute in the setup.json
     for attr in config_data['attributes']:
         # Extract necessary data
         attribute_name = attr['name']

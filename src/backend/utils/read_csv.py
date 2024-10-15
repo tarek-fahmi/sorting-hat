@@ -1,8 +1,8 @@
 import csv
 from typing import List, Dict
-from ..data_structures.person import Person
-from ..data_structures.attribute import Attributes, Attribute
-from ..data_structures.cohort import Cohort
+from src.backend.data_structures.person import Person
+from src.backend.data_structures.attribute import Attributes, Attribute
+from src.backend.data_structures.cohort import Cohort
 
 def load_people_from_csv(file_path: str, attributes: Attributes) -> List[Person]:
     """
@@ -78,7 +78,7 @@ if __name__ == "__main__":
     attributes = Attributes(active=[], options=[])  # Assume this is properly loaded with Attribute objects
 
     # Load cohort from CSV
-    cohort = create_cohort_from_csv('dummy_data_v2.csv', attributes, nMax=5, nMin=3)
+    cohort = create_cohort_from_csv('v2_dummy_data.csv', attributes, nMax=5, nMin=3)
 
     # Now the cohort is created with the people and pairs as per the CSV
     print(f"Cohort created with {len(cohort.people)} people.")
