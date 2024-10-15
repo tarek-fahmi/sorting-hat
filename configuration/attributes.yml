@@ -1,0 +1,182 @@
+attributes:
+  - name: Preferred Language
+    description: The preferred language of communication.
+    default_weight: 1.0
+    selections:
+      - English
+      - Spanish
+      - Mandarin
+      - French
+      - German
+      - Other
+    include_flexibility: true
+    compatibility_matrix:
+      English: {English: 5, Spanish: 3, Mandarin: 2, French: 3, German: 3, Other: 1}
+      Spanish: {English: 3, Spanish: 5, Mandarin: 2, French: 3, German: 2, Other: 1}
+      Mandarin: {English: 2, Spanish: 2, Mandarin: 5, French: 2, German: 2, Other: 1}
+      French: {English: 3, Spanish: 3, Mandarin: 2, French: 5, German: 3, Other: 1}
+      German: {English: 3, Spanish: 2, Mandarin: 2, French: 3, German: 5, Other: 1}
+      Other: {English: 1, Spanish: 1, Mandarin: 1, French: 1, German: 1, Other: 5}
+    enabled_by_default: true
+
+  - name: Preferred Collaboration Level
+    description: The degree of preference for independent versus collaborative work.
+    default_weight: 1.0
+    selections:
+      - Mostly Independent
+      - Balanced
+      - Mostly Collaborative
+    include_flexibility: true
+    compatibility_matrix:
+      Mostly Independent: {Mostly Independent: 5, Balanced: 3, Mostly Collaborative: -2}
+      Balanced: {Mostly Independent: 3, Balanced: 5, Mostly Collaborative: 3}
+      Mostly Collaborative: {Mostly Independent: -2, Balanced: 3, Mostly Collaborative: 5}
+    enabled_by_default: true
+
+  - name: Preferred Meeting Mode
+    description: Preferred setting for meetings and collaboration.
+    default_weight: 1.0
+    selections:
+      - Remote
+      - Mixed
+      - In-Person
+    include_flexibility: true
+    compatibility_matrix:
+      Remote: {Remote: 5, Mixed: 2, In-Person: -3}
+      Mixed: {Remote: 2, Mixed: 5, In-Person: 2}
+      In-Person: {Remote: -3, Mixed: 2, In-Person: 5}
+    enabled_by_default: true
+
+  - name: Preferred Meeting Times
+    description: Optimal times for meetings or collaboration.
+    default_weight: 1.0
+    selections:
+      - Morning
+      - Afternoon
+      - Evening
+      - Night
+    include_flexibility: true
+    compatibility_matrix:
+      Morning: {Morning: 5, Afternoon: 2, Evening: -2, Night: -5}
+      Afternoon: {Morning: 2, Afternoon: 5, Evening: 2, Night: -2}
+      Evening: {Morning: -2, Afternoon: 2, Evening: 5, Night: 2}
+      Night: {Morning: -5, Afternoon: -2, Evening: 2, Night: 5}
+    enabled_by_default: true
+
+  - name: Field of Study or Expertise
+    description: The academic background or area of professional expertise.
+    default_weight: 1.0
+    selections:
+      - Computer Science
+      - Business
+      - Engineering
+      - Arts
+      - Sciences
+      - Other
+    include_flexibility: true
+    compatibility_matrix:
+      Computer Science: {Computer Science: 5, Business: 3, Engineering: 4, Arts: 2, Sciences: 4, Other: 2}
+      Business: {Computer Science: 3, Business: 5, Engineering: 3, Arts: 2, Sciences: 2, Other: 1}
+      Engineering: {Computer Science: 4, Business: 3, Engineering: 5, Arts: 2, Sciences: 4, Other: 2}
+      Arts: {Computer Science: 2, Business: 2, Engineering: 2, Arts: 5, Sciences: 3, Other: 1}
+      Sciences: {Computer Science: 4, Business: 2, Engineering: 4, Arts: 3, Sciences: 5, Other: 2}
+      Other: {Computer Science: 2, Business: 1, Engineering: 2, Arts: 1, Sciences: 2, Other: 5}
+    enabled_by_default: true
+
+  - name: Work Pace
+    description: The preferred pace at which individuals work.
+    default_weight: 1.0
+    selections:
+      - Fast
+      - Steady
+      - Slow
+    include_flexibility: true
+    compatibility_matrix:
+      Fast: {Fast: 5, Steady: 2, Slow: -2}
+      Steady: {Fast: 2, Steady: 5, Slow: 2}
+      Slow: {Fast: -2, Steady: 2, Slow: 5}
+    enabled_by_default: true
+
+  - name: Communication Style
+    description: Preferred mode and tone of communication.
+    default_weight: 1.0
+    selections:
+      - Formal
+      - Casual
+      - Balanced
+    include_flexibility: true
+    compatibility_matrix:
+      Formal: {Formal: 5, Casual: 2, Balanced: 3}
+      Casual: {Formal: 2, Casual: 5, Balanced: 3}
+      Balanced: {Formal: 3, Casual: 3, Balanced: 5}
+    enabled_by_default: true
+
+  - name: Leadership Preference
+    description: The individual's comfort with taking on leadership roles or being led.
+    default_weight: 1.0
+    selections:
+      - Prefer to Lead
+      - Prefer to Follow
+      - Flexible
+    include_flexibility: true
+    compatibility_matrix:
+      Prefer to Lead: {Prefer to Lead: 5, Prefer to Follow: 2, Flexible: 3}
+      Prefer to Follow: {Prefer to Lead: 2, Prefer to Follow: 5, Flexible: 3}
+      Flexible: {Prefer to Lead: 3, Prefer to Follow: 3, Flexible: 5}
+    enabled_by_default: true
+
+  - name: Task Orientation
+    description: The individual's natural approach to tasks (quality versus speed).
+    default_weight: 1.0
+    selections:
+      - Quality-Focused
+      - Speed-Focused
+      - Balanced
+    include_flexibility: true
+    compatibility_matrix:
+      Quality-Focused: {Quality-Focused: 5, Speed-Focused: -2, Balanced: 3}
+      Speed-Focused: {Quality-Focused: -2, Speed-Focused: 5, Balanced: 3}
+      Balanced: {Quality-Focused: 3, Speed-Focused: 3, Balanced: 5}
+    enabled_by_default: true
+
+  - name: Social Interaction Preference
+    description: The level of social interaction preferred within the group.
+    default_weight: 1.0
+    selections:
+      - High
+      - Moderate
+      - Low
+    include_flexibility: true
+    compatibility_matrix:
+      High: {High: 5, Moderate: 2, Low: -3}
+      Moderate: {High: 2, Moderate: 5, Low: 2}
+      Low: {High: -3, Moderate: 2, Low: 5}
+    enabled_by_default: true
+
+  - name: Feedback Style Preference
+    description: Preferred method of receiving feedback.
+    default_weight: 1.0
+    selections:
+      - Direct and Candid
+      - Constructive and Encouraging
+      - Formal and Structured
+    include_flexibility: true
+    compatibility_matrix:
+      Direct and Candid: {Direct and Candid: 5, Constructive and Encouraging: 2, Formal and Structured: 3}
+      Constructive and Encouraging: {Direct and Candid: 2, Constructive and Encouraging: 5, Formal and Structured: 3}
+      Formal and Structured: {Direct and Candid: 3, Constructive and Encouraging: 3, Formal and Structured: 5}
+    enabled_by_default: false
+
+  - name: Time Management Approach
+    description: The individual’s preferred way of managing time and deadlines.
+    default_weight: 1.0
+    selections:
+      - Structured
+      - Flexible
+      - Last-Minute
+    include_flexibility: true
+    compatibility_matrix:
+      Structured: {Structured: 5, Flexible: 3, Last-Minute: -2}
+      Flexible: {Structured: 3, Flexible: 5, Last-Minute: 2}
+      Last-Minute: {Structured: -2, Flexible: 2, Last-Minute: 5}
+    enabled_by_default: true

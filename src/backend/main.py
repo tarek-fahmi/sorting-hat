@@ -1,12 +1,12 @@
-from src.backend.utils import read_csv, read_cfg
+from src.backend.setup import read_csv, read_cfg
 
 
 def main():
     # Load attributes from the configuration file
-    attributes = read_cfg.load_attributes("../../resources/configuration/setup.json")
+    attributes = read_cfg.load_attributes("../../configuration/attributes.yml")
 
     # Load people from the CSV and activate optional attributes
-    cohort = read_csv.create_cohort_from_csv("../../resources/input/v2_dummy_data.csv", attributes, nMax=5, nMin=3)
+    cohort = read_csv.create_cohort_from_csv("../../data/input/v2_dummy_data.csv", attributes, nMax=5, nMin=3)
 
     # Allocate groups using the greedy algorithm
     cohort.allocate_groups_greedy()

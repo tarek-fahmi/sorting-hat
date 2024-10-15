@@ -1,7 +1,7 @@
-from .person import Person
-from .pair import Pair
-from .attribute import Attributes
-from .group import Group
+from backend.data_structures.person import Person
+from backend.data_structures.pair import Pair
+from backend.data_structures.attribute import Attributes
+from backend.data_structures.group import Group
 from typing import List, Dict, Tuple
 import random
 import math

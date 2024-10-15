@@ -1,0 +1,85 @@
+# config.yml
+
+# Default values for all settings, used if no custom value is provided.
+default:
+
+  attributes:
+
+    enabled:
+      Preferred Language: true
+      Preferred Collaboration Level: true
+      Task Orientation: true
+      Preferred Meeting Mode: true
+      Field of Study or Expertise: true
+      Work Pace: false
+      Communication Style: true
+      Leadership Preference: true
+      Social Interaction Preference: false
+      Feedback Style Preference: false
+      Time Management Approach: true
+
+  flexibility:
+    enabled: true
+    default_flexibility_score: 5  # Used when flexibility data is missing
+
+  group_size:
+    min: 3
+    max: 5
+
+  variance_tolerances:
+    group_score_variance_limit: 3  # Max allowed variance for group scores
+    pair_score_variance_limit: 4    # Max allowed variance for pair scores
+
+  optimization:
+    algorithm: simulated_annealing
+    parameters:
+      temperature: 0.9
+      iterations: 1000
+
+# Custom values provided by the user, which override the defaults.
+# None values indicate no selection, fallback to default.
+custom_settings:
+
+  attributes:
+    weights:
+      Preferred Language: None
+      Preferred Collaboration Level: None
+      Task Orientation: None
+      Preferred Meeting Mode: None
+      Field of Study or Expertise: None
+      Work Pace: None
+      Communication Style: None
+      Leadership Preference: None
+      Social Interaction Preference: None
+      Feedback Style Preference: None
+      Time Management Approach: None
+
+    enabled:
+      Preferred Language: None
+      Preferred Collaboration Level: None
+      Task Orientation: None
+      Preferred Meeting Mode: None
+      Field of Study or Expertise: None
+      Work Pace: None
+      Communication Style: None
+      Leadership Preference: None
+      Social Interaction Preference: None
+      Feedback Style Preference: None
+      Time Management Approach: None
+
+  flexibility:
+    enabled: true
+
+  group_size:
+    min: None
+    max: None
+
+  variance_tolerances:
+    group_score_variance_limit: None
+    pair_score_variance_limit: None
+
+  optimization:
+    algorithm: None
+    parameters:
+      temperature: None
+      iterations: None
