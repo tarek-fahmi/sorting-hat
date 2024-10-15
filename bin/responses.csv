@@ -1,5 +1,0 @@
-name,sid,preferred_language,preferred_language_flex,preferred_collaboration_level,collaboration_level_flex,preferred_meeting_mode,meeting_mode_flex,preferred_meeting_times,meeting_times_flex,field_of_study,field_of_study_flex,work_pace,work_pace_flex,communication_style,communication_style_flex,leadership_preference,leadership_preference_flex,task_orientation,task_orientation_flex,social_interaction_preference,social_interaction_flex,time_management_approach,time_management_flex
-John Doe,123456,English,7,Mostly Collaborative,8,Remote,5,Morning,6,Computer Science,9,Steady,8,Formal,7,Flexible,6,Quality-Focused,9,Moderate,5,Structured,8
-Jane Smith,789012,Spanish,6,Balanced,7,Mixed,8,Afternoon,6,Business,7,Fast,6,Casual,9,Prefer to Lead,8,Speed-Focused,6,High,7,Flexible,7
-Tom Brown,345678,Mandarin,8,Mostly Independent,5,In-Person,7,Evening,8,Engineering,6,Slow,4,Balanced,5,Prefer to Follow,7,Balanced,8,Low,9,Last-Minute,6
-Alice Johnson,901234,French,5,Mostly Collaborative,9,Mixed,6,Night,4,Arts,8,Steady,7,Casual,6,Flexible,8,Quality-Focused,7,Moderate,6,Structured,8

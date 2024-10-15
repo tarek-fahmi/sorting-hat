@@ -1,10 +1,11 @@
-from person import Person
-from pair import Pair
-from attribute import Attributes
-from group import Group
+from .person import Person
+from .pair import Pair
+from .attribute import Attributes
+from .group import Group
 from typing import List, Dict, Tuple
 import random
 import math
+
 
 class Cohort:
     def __init__(self, people: List[Person], attributes: Attributes, nMax: int, nMin: int):

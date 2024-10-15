@@ -1,0 +1,51 @@
+name,sid,Preferred Language,Preferred Language Flexibility,Preferred Collaboration Level,Preferred Collaboration Level Flexibility,Preferred Meeting Mode,Preferred Meeting Mode Flexibility,Preferred Meeting Times,Preferred Meeting Times Flexibility,Field of Study or Expertise,Field of Study or Expertise Flexibility,Work Pace,Work Pace Flexibility,Communication Style,Communication Style Flexibility,Leadership Preference,Leadership Preference Flexibility,Task Orientation,Task Orientation Flexibility,Social Interaction Preference,Social Interaction Preference Flexibility,Feedback Style Preference,Feedback Style Preference Flexibility,Time Management Approach,Time Management Approach Flexibility
+John Doe,12345,English,7,Mostly Independent,5,Remote,6,Morning,8,Computer Science,9.0,Fast,7,Formal,5,Prefer to Lead,6,Quality-Focused,8,High,7,Direct and Candid,6,Structured,7
+Jane Smith,67890,Spanish,8,Balanced,7,Mixed,5,Afternoon,6,Business,8.0,Steady,7,Casual,8,Flexible,6,Speed-Focused,6,Moderate,6,Constructive and Encouraging,7,Flexible,5
+Student 1,10000,Mandarin,6,Balanced,8,Mixed,10,Morning,5,Computer Science,,Fast,7,Balanced,5,Flexible,8,Speed-Focused,7,Moderate,8,Constructive and Encouraging,7,Last-Minute,7
+Student 2,10001,Spanish,7,Balanced,6,Remote,8,Afternoon,8,Sciences,,Fast,7,Casual,8,Flexible,7,Quality-Focused,5,Moderate,5,Formal and Structured,9,Last-Minute,9
+Student 3,10002,English,6,Balanced,7,Remote,5,Afternoon,9,Computer Science,,Fast,7,Casual,7,Flexible,9,Balanced,9,Low,9,Direct and Candid,9,Last-Minute,7
+Student 4,10003,English,6,Mostly Independent,6,In-Person,5,Morning,7,Engineering,,Fast,9,Formal,9,Flexible,6,Balanced,7,Low,6,Direct and Candid,6,Structured,10
+Student 5,10004,French,10,Mostly Independent,7,Remote,8,Afternoon,8,Sciences,,Fast,8,Balanced,6,Prefer to Follow,6,Quality-Focused,7,High,10,Constructive and Encouraging,5,Flexible,5
+Student 6,10005,Other,10,Mostly Collaborative,9,Remote,8,Evening,6,Engineering,,Slow,6,Casual,7,Prefer to Lead,10,Quality-Focused,8,High,8,Formal and Structured,8,Last-Minute,6
+Student 7,10006,French,8,Balanced,7,Remote,7,Afternoon,5,Business,,Steady,8,Formal,6,Prefer to Follow,9,Balanced,10,High,7,Formal and Structured,10,Structured,6
+Student 8,10007,Mandarin,10,Mostly Collaborative,5,Remote,9,Night,9,Business,,Steady,9,Formal,10,Prefer to Follow,5,Speed-Focused,8,High,6,Direct and Candid,8,Last-Minute,9
+Student 9,10008,Mandarin,7,Mostly Collaborative,9,In-Person,7,Evening,7,Other,,Slow,6,Casual,10,Flexible,7,Balanced,8,Moderate,10,Formal and Structured,6,Flexible,6
+Student 10,10009,Spanish,9,Mostly Collaborative,8,In-Person,7,Evening,6,Sciences,,Slow,7,Formal,6,Prefer to Lead,7,Speed-Focused,10,Moderate,6,Formal and Structured,9,Last-Minute,10
+Student 11,10010,Spanish,6,Balanced,7,In-Person,9,Afternoon,8,Engineering,,Steady,5,Balanced,6,Prefer to Follow,6,Balanced,10,Low,8,Direct and Candid,7,Last-Minute,10
+Student 12,10011,Mandarin,8,Balanced,10,Mixed,6,Morning,5,Computer Science,,Steady,5,Balanced,5,Prefer to Follow,8,Speed-Focused,9,Low,10,Constructive and Encouraging,6,Structured,6
+Student 13,10012,Mandarin,6,Mostly Collaborative,8,In-Person,8,Morning,9,Arts,,Fast,7,Casual,10,Prefer to Follow,6,Speed-Focused,5,Moderate,9,Formal and Structured,8,Flexible,8
+Student 14,10013,French,10,Mostly Collaborative,6,Mixed,6,Morning,6,Arts,,Steady,9,Balanced,5,Prefer to Lead,6,Quality-Focused,5,Moderate,10,Constructive and Encouraging,10,Flexible,10
+Student 15,10014,Mandarin,9,Mostly Collaborative,7,Mixed,5,Morning,9,Other,,Fast,9,Balanced,10,Flexible,6,Balanced,7,Moderate,10,Constructive and Encouraging,6,Last-Minute,5
+Student 16,10015,French,5,Mostly Independent,5,In-Person,7,Afternoon,7,Engineering,,Fast,6,Balanced,10,Flexible,7,Balanced,10,Moderate,5,Formal and Structured,7,Flexible,6
+Student 17,10016,Spanish,5,Mostly Independent,9,Mixed,8,Evening,5,Other,,Slow,9,Casual,8,Prefer to Lead,8,Speed-Focused,5,Moderate,9,Constructive and Encouraging,10,Flexible,7
+Student 18,10017,Spanish,9,Mostly Collaborative,8,Mixed,10,Morning,5,Business,,Steady,10,Formal,7,Flexible,7,Balanced,8,High,9,Formal and Structured,7,Last-Minute,9
+Student 19,10018,German,10,Balanced,8,In-Person,7,Night,8,Computer Science,,Fast,7,Casual,7,Prefer to Follow,5,Quality-Focused,5,Low,7,Constructive and Encouraging,9,Structured,10
+Student 20,10019,English,8,Mostly Collaborative,5,In-Person,5,Evening,7,Other,,Slow,9,Casual,6,Prefer to Lead,9,Balanced,6,Moderate,10,Constructive and Encouraging,10,Flexible,6
+Student 21,10020,English,7,Mostly Collaborative,8,Mixed,5,Night,6,Business,,Slow,10,Balanced,6,Prefer to Lead,8,Quality-Focused,9,Low,8,Constructive and Encouraging,8,Structured,10
+Student 22,10021,German,9,Balanced,5,In-Person,10,Evening,5,Business,,Slow,6,Casual,10,Flexible,9,Quality-Focused,10,Low,6,Formal and Structured,6,Flexible,10
+Student 23,10022,German,8,Balanced,6,Mixed,7,Night,9,Sciences,,Steady,9,Balanced,10,Flexible,6,Balanced,10,Low,7,Formal and Structured,10,Last-Minute,7
+Student 24,10023,Spanish,6,Mostly Collaborative,5,Remote,6,Afternoon,9,Computer Science,,Slow,5,Casual,9,Flexible,8,Speed-Focused,5,High,10,Constructive and Encouraging,7,Last-Minute,7
+Student 25,10024,English,9,Balanced,9,In-Person,5,Morning,6,Sciences,,Slow,10,Formal,8,Flexible,5,Balanced,6,High,7,Formal and Structured,9,Structured,10
+Student 26,10025,German,7,Balanced,10,Mixed,9,Evening,8,Other,,Fast,7,Balanced,6,Prefer to Lead,9,Quality-Focused,8,Moderate,5,Constructive and Encouraging,9,Flexible,6
+Student 27,10026,Spanish,5,Mostly Collaborative,10,In-Person,6,Morning,5,Engineering,,Fast,8,Balanced,8,Flexible,10,Speed-Focused,7,Low,7,Direct and Candid,9,Flexible,10
+Student 28,10027,English,7,Balanced,7,Mixed,6,Night,10,Business,,Slow,8,Formal,6,Prefer to Lead,5,Balanced,6,Low,7,Direct and Candid,6,Last-Minute,10
+Student 29,10028,English,9,Mostly Independent,6,In-Person,9,Evening,6,Engineering,,Slow,8,Casual,7,Prefer to Follow,10,Balanced,8,Moderate,8,Constructive and Encouraging,5,Last-Minute,5
+Student 30,10029,Other,8,Balanced,10,Mixed,5,Morning,6,Engineering,,Slow,8,Casual,8,Prefer to Lead,6,Speed-Focused,7,Low,7,Direct and Candid,6,Last-Minute,9
+Student 31,10030,English,10,Mostly Independent,8,Mixed,7,Afternoon,8,Computer Science,,Steady,10,Formal,8,Flexible,9,Balanced,7,High,7,Formal and Structured,6,Last-Minute,7
+Student 32,10031,French,10,Mostly Collaborative,5,Mixed,7,Evening,6,Arts,,Slow,6,Balanced,6,Flexible,7,Balanced,6,Low,9,Direct and Candid,6,Last-Minute,9
+Student 33,10032,French,8,Balanced,8,Remote,8,Morning,10,Other,,Steady,5,Casual,6,Prefer to Follow,7,Speed-Focused,7,High,8,Direct and Candid,5,Flexible,10
+Student 34,10033,Mandarin,6,Balanced,9,Mixed,6,Morning,8,Business,,Slow,7,Casual,9,Prefer to Lead,9,Balanced,5,Moderate,10,Direct and Candid,10,Last-Minute,6
+Student 35,10034,French,10,Mostly Independent,8,Mixed,5,Afternoon,10,Arts,,Fast,10,Casual,6,Prefer to Lead,5,Quality-Focused,5,High,8,Direct and Candid,7,Last-Minute,10
+Student 36,10035,Other,5,Mostly Independent,6,Mixed,10,Afternoon,7,Sciences,,Fast,5,Balanced,8,Prefer to Follow,5,Quality-Focused,6,High,9,Formal and Structured,5,Structured,10
+Student 37,10036,English,10,Mostly Collaborative,7,In-Person,8,Night,5,Sciences,,Slow,8,Balanced,10,Prefer to Follow,6,Quality-Focused,7,Low,9,Constructive and Encouraging,7,Structured,6
+Student 38,10037,French,7,Mostly Independent,8,Remote,8,Night,5,Computer Science,,Steady,6,Casual,8,Flexible,6,Balanced,6,Moderate,7,Constructive and Encouraging,9,Last-Minute,9
+Student 39,10038,Mandarin,9,Mostly Independent,10,Remote,7,Night,9,Sciences,,Slow,6,Balanced,9,Prefer to Lead,7,Speed-Focused,5,Moderate,6,Constructive and Encouraging,10,Structured,8
+Student 40,10039,Mandarin,8,Mostly Collaborative,10,Remote,10,Afternoon,7,Engineering,,Steady,9,Formal,9,Flexible,10,Speed-Focused,9,High,5,Constructive and Encouraging,7,Flexible,10
+Student 41,10040,English,9,Balanced,9,Remote,7,Night,7,Engineering,,Steady,9,Formal,6,Prefer to Follow,6,Quality-Focused,6,Low,5,Formal and Structured,5,Flexible,5
+Student 42,10041,Spanish,10,Mostly Collaborative,6,Remote,10,Evening,9,Business,,Steady,8,Formal,6,Prefer to Follow,7,Balanced,6,Low,5,Direct and Candid,6,Last-Minute,10
+Student 43,10042,German,6,Mostly Collaborative,6,Remote,5,Morning,8,Engineering,,Slow,10,Casual,7,Prefer to Lead,10,Quality-Focused,8,Moderate,7,Direct and Candid,8,Flexible,5
+Student 44,10043,English,7,Mostly Independent,6,Mixed,6,Morning,7,Other,,Steady,9,Casual,8,Flexible,7,Quality-Focused,7,Moderate,10,Formal and Structured,8,Flexible,5
+Student 45,10044,French,9,Balanced,10,Remote,9,Afternoon,7,Computer Science,,Slow,8,Formal,10,Flexible,9,Speed-Focused,6,Moderate,6,Formal and Structured,7,Last-Minute,9
+Student 46,10045,German,8,Balanced,9,In-Person,9,Evening,8,Sciences,,Slow,7,Formal,9,Flexible,5,Balanced,6,Low,6,Constructive and Encouraging,8,Last-Minute,8
+Student 47,10046,Other,9,Balanced,8,Mixed,5,Night,6,Arts,,Slow,7,Formal,5,Flexible,10,Balanced,8,Low,9,Direct and Candid,7,Flexible,7
+Student 48,10047,Other,9,Mostly Collaborative,9,In-Person,10,Afternoon,8,Other,,Steady,7,Formal,8,Prefer to Follow,9,Balanced,5,High,9,Direct and Candid,9,Flexible,10

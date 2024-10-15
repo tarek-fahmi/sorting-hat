@@ -1,5 +1,5 @@
-from person import Person
-from pair import Pair
+from .person import Person
+from .pair import Pair
 from typing import List, Optional
 from math import inf
 
@@ -86,35 +86,18 @@ class Group:
             for p2 in self.members[i + 1:]:
                 pair_key = (p1, p2) if (p1, p2) in self.cohort.pairs else (p2, p1)
                 pair_current = self.cohort.pairs.get(pair_key)
+
                 if pair_current:
                     total_score += pair_current.PCS
                     num_pairs += 1
+                else:
+                    print(f"Pair not found for {p1.name} and {p2.name}")
 
-        self._GCS = total_score / num_pairs if num_pairs > 0 else 0
-
-    @property
-    def GCS(self) -> float:
-        '''Returns the overall group compatibility score.'''
-        return self._GCS
-
-    def compute_PCS_variance(self):
-        '''
-        Calculates the variance of pairwise compatibility scores within the group.
-        '''
-        if len(self.members) < 2:
-            self._PCS_variance = 0
-            return
-
-        scores = []
-        for i, p1 in enumerate(self.members):
-            for p2 in self.members[i + 1:]:
-                pair_key = (p1, p2) if (p1, p2) in self.cohort.pairs else (p2, p1)
-                pair_current = self.cohort.pairs.get(pair_key)
-                if pair_current:
-                    scores.append(pair_current.PCS)
-
-        mean_score = sum(scores) / len(scores) if scores else 0
-        self._PCS_variance = sum((x - mean_score) ** 2 for x in scores) / len(scores) if scores else 0
+        if num_pairs > 0:
+            self._GCS = total_score / num_pairs
+        else:
+            print(f"No valid pairs found for group with members: {[p.name for p in self.members]}")
+            self._GCS = 0
 
     @property
     def PCS_variance(self) -> float:

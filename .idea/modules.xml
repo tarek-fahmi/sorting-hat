@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Sorting Hat - Enhancing Group Synergy.iml" filepath="$PROJECT_DIR$/.idea/Sorting Hat - Enhancing Group Synergy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/sorting-hat.iml" filepath="$PROJECT_DIR$/.idea/sorting-hat.iml" />
     </modules>
   </component>
 </project>

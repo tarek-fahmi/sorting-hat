@@ -1,5 +1,5 @@
-from person import Person
-from attribute import Attribute, Attributes
+from .person import Person
+from .attribute import Attribute, Attributes
 from typing import Dict, Optional
 
 
@@ -12,7 +12,7 @@ class Pair:
     def __init__(self, person1: Person, person2: Person, attributes: Attributes):
         self.p1 = person1
         self.p2 = person2
-        self.attributes = attributes  # Store the attributes for future use
+        self.attributes = attributes  # Store a reference to the attributes object for future use
 
         # Store raw and adjusted selection scores
         self._selection_scores_raw: Dict[Attribute, float] = {}
@@ -25,7 +25,7 @@ class Pair:
         """
         Initializes the raw and adjusted scores for all active attributes.
         """
-        for attribute in self.attributes.get_active():
+        for attribute in self.attributes.get_active:
             raw_score = self._get_attribute_pcs_raw(attribute)
             adjusted_score = self._get_attribute_pcs(attribute, raw_score)
 
@@ -76,6 +76,12 @@ class Pair:
         p1_flexibility = self.p1.get_flexibility(attribute)
         p2_flexibility = self.p2.get_flexibility(attribute)
 
+        # Ensure flexibility scores are valid
+        if not (1 <= p1_flexibility <= 10):
+            raise ValueError(f"Invalid flexibility score for person1: {p1_flexibility}")
+        if not (1 <= p2_flexibility <= 10):
+            raise ValueError(f"Invalid flexibility score for person2: {p2_flexibility}")
+
         # Adjust raw score using the maximum flexibility score
         adjusted_score = raw_score * (1 - (max(p1_flexibility, p2_flexibility) / 10))
         return adjusted_score
@@ -91,7 +97,8 @@ class Pair:
         total_score = 0
         for attribute in self.attributes.get_active():
             total_score += self._selection_scores_raw[attribute] * attribute.get_weight()
-        return total_score
+
+        return total_score if total_score > 0 else 0.0
 
     @property
     def PCS(self) -> float:
@@ -102,9 +109,10 @@ class Pair:
             float: The total weighted adjusted compatibility score for this pair.
         """
         total_score = 0
-        for attribute in self.attributes.get_active():
+        for attribute in self.attributes.get_active:
             total_score += self._selection_scores[attribute] * attribute.get_weight()
-        return total_score
+
+        return total_score if total_score > 0 else 0.0
 
     @property
     def selection_scores_raw(self) -> Dict[Attribute, float]:

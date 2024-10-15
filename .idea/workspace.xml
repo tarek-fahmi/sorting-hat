@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="20c030e4-bb40-4992-8b38-ed1245dc3187" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/bin/dummy_data_v1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/dummy_data_v2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/utils/read_cfg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/utils/read_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Sorting Hat - Enhancing Group Synergy.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/dummy_data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/responses.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/data_structures.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/data_structures.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v1/sorting-hat-v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/sorting-hat-v1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/algorithms/advanced_allocation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/algorithms/advanced_allocation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/algorithms/heuristic_allocation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/algorithms/heuristic_allocation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/cfg_loader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/data_structures/attribute.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/data_structures/attribute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/data_structures/cohort.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/data_structures/cohort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/data_structures/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/data_structures/group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/data_structures/pair.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/data_structures/pair.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/data_structures/person.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/data_structures/person.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/resources/cfg_custom.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/resources/cfg_default.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/setup/read_csv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/v2/utils/utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/utils/utilities.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2nCKlZMWcqFp9FWF5YWoKqY0t4c" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/backend" />
+      <recent name="$PROJECT_DIR$/src/v2/backend" />
+      <recent name="$PROJECT_DIR$/src/v2" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python">
+      <module name="sorting-hat" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.11" />
+      <option name="SDK_NAME" value="Python 3.11" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20c030e4-bb40-4992-8b38-ed1245dc3187" name="Changes" comment="" />
+      <created>1728471769111</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728471769111</updated>
+    </task>
+    <servers />
+  </component>
+</project>
