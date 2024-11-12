@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <div>
-      <h1>Welcome to Sorting Hat</h1>
+      <h1>Welcome to Sorting Hat Application</h1>
       <Link to="/upload">
-        <button>Upload CSV to Start</button>
+        <button>Press to Start</button>
       </Link>
     </div>
   );
