@@ -61,50 +61,6 @@
     margin-top: 1rem;
 }
 
-.csv-preview {
-    background-color: #3a3f47;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 800px;
-    width: 100%;
-    color: #ffffff;
-    text-align: left;
-    margin-top: 2rem;
-}
-
-.csv-preview h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.csv-preview table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 1rem;
-}
-
-.csv-preview th,
-.csv-preview td {
-    border: 1px solid #444;
-    padding: 0.75rem;
-    text-align: left;
-}
-
-.csv-preview th {
-    background-color: #444;
-}
-
-.csv-preview td {
-    background-color: #1e1e1e;
-}
-
-.csv-preview th:nth-child(1),
-.csv-preview td:nth-child(1) {
-    width: 110px;
-}
-
 .download-button {
     padding: 0.75rem 2rem;
     font-size: 1.2rem;
