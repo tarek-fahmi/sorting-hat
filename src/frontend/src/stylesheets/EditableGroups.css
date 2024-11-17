@@ -1,0 +1,28 @@
+.csv-table {
+    display: table;
+    width: 100%;
+  }
+  
+  .csv-table-row {
+    display: table-row;
+  }
+  
+  .csv-table-cell {
+    display: table-cell;
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .group-members-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .group-member {
+    margin: 4px;
+    padding: 8px;
+    background-color: #eaeaea;
+    border: 1px solid #ccc;
+    cursor: grab;
+  }
+  

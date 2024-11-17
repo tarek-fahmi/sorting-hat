@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Upload from './pages/Upload';
+import Home from './components/Home';
+import Upload from './components/Upload';
 import './App.css';
 
 function App() {
