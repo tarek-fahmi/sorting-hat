@@ -6,3 +6,9 @@
 ```(bash)
 source .sorting_hat/bin/activate
 ```
+
+3. Run the backend using the command below
+
+```(bash)
+python3 backend.py
+```
