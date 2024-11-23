@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { DragDropContext, Droppable, Draggable, DropResult } from 'react-beautiful-dnd';
+import React, { useState, ReactNode } from 'react';
+import { DndProvider, useDrag, useDrop } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
 import '../stylesheets/EditableGroups.css';
 
 interface Group {
@@ -12,97 +13,91 @@ interface EditableGroupsProps {
   onSave: (groups: Group[]) => void;
 }
 
+interface DraggableItem {
+  member: string;
+  groupIndex: number;
+  memberIndex: number;
+}
+
 const EditableGroups: React.FC<EditableGroupsProps> = ({ initialGroups, onSave }) => {
   const [groups, setGroups] = useState<Group[]>(initialGroups);
 
-  // Handle the end of a drag event
-  const handleDragEnd = (result: DropResult) => {
-    if (!result.destination) return;
-
-    const { source, destination } = result;
-
-    // Extract group indices from droppableIds
-    const sourceGroupIndex = parseInt(source.droppableId.split('-')[1], 10);
-    const destinationGroupIndex = parseInt(destination.droppableId.split('-')[1], 10);
-
-    const sourceGroup = groups[sourceGroupIndex];
-    const destinationGroup = groups[destinationGroupIndex];
-
-    const sourceItems = Array.from(sourceGroup.members);
-    const destinationItems = Array.from(destinationGroup.members);
-
-    // Remove dragged item from source
-    const [movedItem] = sourceItems.splice(source.index, 1);
-
-    // Add dragged item to destination
-    destinationItems.splice(destination.index, 0, movedItem);
-
+  const moveMember = (source: DraggableItem, destinationGroupIndex: number, destinationMemberIndex: number) => {
     const updatedGroups = [...groups];
-    updatedGroups[sourceGroupIndex] = {
-      ...sourceGroup,
-      members: sourceItems,
-    };
-    updatedGroups[destinationGroupIndex] = {
-      ...destinationGroup,
-      members: destinationItems,
-    };
+    const sourceGroup = updatedGroups[source.groupIndex];
+    const destinationGroup = updatedGroups[destinationGroupIndex];
+
+    // Remove member from source group
+    const [movedMember] = sourceGroup.members.splice(source.memberIndex, 1);
+
+    // Add member to destination group
+    destinationGroup.members.splice(destinationMemberIndex, 0, movedMember);
 
     setGroups(updatedGroups);
     onSave(updatedGroups);
   };
 
+  const Member: React.FC<{ member: string; groupIndex: number; memberIndex: number }> = ({ member, groupIndex, memberIndex }) => {
+    const [, dragRef] = useDrag({
+      type: 'MEMBER',
+      item: { member, groupIndex, memberIndex },
+    });
+
+    return (
+      <div ref={dragRef} className="group-member">
+        {member}
+      </div>
+    );
+  };
+
+  const GroupDropArea: React.FC<{ groupIndex: number; memberIndex: number; children: ReactNode }> = ({ groupIndex, memberIndex, children }) => {
+    const [, dropRef] = useDrop({
+      accept: 'MEMBER',
+      drop: (item: DraggableItem) => {
+        moveMember(item, groupIndex, memberIndex);
+      },
+    });
+
+    return (
+      <div ref={dropRef} className="drop-area">
+        {children}
+      </div>
+    );
+  };
+
   return (
-    <DragDropContext onDragEnd={handleDragEnd}>
+    <DndProvider backend={HTML5Backend}>
       <div className="csv-preview">
         <h2>CSV Preview</h2>
-        <div className="csv-table">
-          <div className="csv-table-header">
-            <div className="csv-table-row">
-              <div className="csv-table-cell">Group Name</div>
-              <div className="csv-table-cell">Student Names</div>
-            </div>
-          </div>
-          <div className="csv-table-body">
+        <table className="csv-table">
+          <thead>
+            <tr>
+              <th>Group Name</th>
+              <th>Student Names</th>
+            </tr>
+          </thead>
+          <tbody>
             {groups.map((group, groupIndex) => (
-              <div className="csv-table-row" key={`group-${groupIndex}`}>
-                <div className="csv-table-cell">{group.name}</div>
-                <div className="csv-table-cell">
-                  <Droppable droppableId={`group-${groupIndex}`} direction="horizontal">
-                    {(provided) => (
-                      <div
-                        className="group-members-container"
-                        ref={provided.innerRef}
-                        {...provided.droppableProps}
-                      >
-                        {group.members.map((member, memberIndex) => (
-                          <Draggable
-                            key={`member-${groupIndex}-${memberIndex}`}
-                            draggableId={`member-${groupIndex}-${memberIndex}`}
-                            index={memberIndex}
-                          >
-                            {(provided) => (
-                              <div
-                                ref={provided.innerRef}
-                                {...provided.draggableProps}
-                                {...provided.dragHandleProps}
-                                className="group-member"
-                              >
-                                {member}
-                              </div>
-                            )}
-                          </Draggable>
-                        ))}
-                        {provided.placeholder}
-                      </div>
-                    )}
-                  </Droppable>
-                </div>
-              </div>
+              <tr key={groupIndex}>
+                <td>{group.name}</td>
+                <td>
+                  <div className="group-members-container">
+                    {group.members.map((member, memberIndex) => (
+                      <GroupDropArea key={memberIndex} groupIndex={groupIndex} memberIndex={memberIndex}>
+                        <Member member={member} groupIndex={groupIndex} memberIndex={memberIndex} />
+                      </GroupDropArea>
+                    ))}
+                    <GroupDropArea groupIndex={groupIndex} memberIndex={group.members.length}>
+                      <div className="add-member-placeholder">Drop here</div>
+                    </GroupDropArea>
+                  </div>
+                </td>
+              </tr>
             ))}
-          </div>
-        </div>
+          </tbody>
+        </table>
       </div>
-    </DragDropContext>
+    </DndProvider>
   );
 };
 
